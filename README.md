@@ -1,0 +1,1 @@
+# okos_akna
