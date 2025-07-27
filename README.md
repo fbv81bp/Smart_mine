@@ -1,4 +1,4 @@
-# 'Ground Umbrella' okos akna deaktiváló vevő kriptográfiai protokoll motorja
+# Okos akna deaktiváló vevő kriptográfiai protokoll motorja
 
 Egy okos taposóakna nem árulhatja el, hogy hol van, és keveset kell fogyasszon, mindkettő miatt egyirányú, sugárzott rádió adás vételére épülő egyirányú protokoll kell: az aknában csak rádió vevő lehet. Ezzel kell tudni esetileg deaktiválni ill. a teljes aknamezőt néha ákódolni.
 
