@@ -1,4 +1,4 @@
-# Smart Mine Deactivation Receiver Cryptographic Protocol Engine
+# 'Ground Umbrealla' Smart Mine Deactivation Receiver Cryptographic Protocol Engine
 
 A smart landmine cannot reveal its location and must consume little power - both requirements necessitate a unidirectional protocol based on receiving unidirectional, broadcast radio transmissions: the mine can only contain a radio receiver. This must be capable of occasionally deactivating or sometimes recoding the entire minefield.
 
