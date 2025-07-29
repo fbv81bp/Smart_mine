@@ -6,9 +6,7 @@ Az aknáknak időosztásos ugrókóddal kell működniük a visszajátszhatósá
 
 Ha egy hash sorozat preimage-eit alkalmazzuk az átkódolások során, az egyszerre egy oldaltámadás védett protokoll, és kvantum biztos kriptográfia. Az időosztásos ugrókód pedig lehet az ilyen mesterkulcsból eredő hash-lánc vége.
 
-A hash-lánc jelenthet 64 egymás utáni hash-t, melyeknek egy monoton növekvő, 64 bites számláló bitjeit használjuk a sózásához. Ha ez a számlaló telítődik, az akna deaktiválódik. Ha új mesterkulcsot kap, az pedig lenullázza. Az alacsony fogyasztás érdekében másodpercenként ...
-
-... elég kódokat váltani, de annyira kell sűrűn, hogy az üldöző ne tudhassa visszajátszani. A kódoknak továbbá egykét lépés áfedéssel kell dolgozniuk: nehogy valaki felrobbanjon, mert pár másodperccel eltér, hogy az adójában, vagy épp az aknában a számláló mikor lett lenullázva.
+A hash-lánc jelenthet 64 egymás utáni hash-t, melyeknek egy monoton növekvő, 64 bites számláló bitjeit használjuk a sózásához. Ha ez a számlaló telítődik, az akna deaktiválódik. Ha új mesterkulcsot kap, az pedig lenullázza. Az alacsony fogyasztás érdekében másodpercenként elég kódokat váltani, de annyira kell sűrűn, hogy az üldöző ne tudhassa visszajátszani. A kódoknak továbbá egykét lépés áfedéssel kell dolgozniuk: nehogy valaki felrobbanjon, mert pár másodperccel eltér, hogy az adójában, vagy épp az aknában a számláló mikor lett lenullázva.
 
 Biztonsági szempontból nem tűnik hülyeségnek rövidebb számlálót használni, többféle mesterkulcsos aknával védeni egy területet, és csak azoknak és akkor frissíteni a mesterkulcsát, amelyek és amikor már deaktiválódtak. Így elkerülhetőbbek az eltérő mesterkulcs miatti balesetek.
 
