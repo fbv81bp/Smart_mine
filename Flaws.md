@@ -1,4 +1,4 @@
-## Cracking a master key of just one mine
+## Cracking a master key of just one single mine
 1) If the master key ever gets compromised, it is easy to decrypt the new key when the central broadcast is sent to re-key the mine field with a pre-image of the contemporary master key.
 2) Replacing master keys faster than they may be cracked doesn't work here either, for the enemy may record the radio transmissions of the new keys, and decide them once they find the very first master key.
 
