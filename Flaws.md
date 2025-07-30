@@ -1,4 +1,10 @@
 ## Cracking a master key of just one single mine
+
+The problem generally:
+- having a system with a compromised state, that cannot be altered but is known to an adversary, and
+- having a uni-directional communication channel,
+- is there a way to bring the system into a state unknown to the adversary, but known to the its righteous owner?
+
 1) If the master key ever gets compromised, it is easy to decrypt the new key when the central broadcast is sent to re-key the mine field with a pre-image of the contemporary master key.
 2) Replacing master keys faster than they may be cracked doesn't work here either, for the enemy may record the radio transmissions of the new keys, and decipher them once they find the very first master key in an older mine.
 
