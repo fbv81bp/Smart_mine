@@ -13,3 +13,4 @@ The problem generally:
 2) Having a large hash value as the master key, like 384 bits, then comparing fewer, for example just the first 256 bits, and in a random order, of the new pre-image based key's hash against the contemporary master key should make the storage more SCA and tamper resistant against recovering the master key. This way some of the state stays secured abd the receiver channel's secrecy may stay safe.
 3) Tampering sensors make the master key deleted.
 4) Some heartbeat like, secured radio message is broadcast to the mines, of a mine looses that, it deletes its master key(?). Can be replayed though. Similar to having a GPS receiver to ban removal.
+5) Compare only parts of hashes in a randomly addressed order by PUFs, and make a majority decision on securely large number of bits if the preimage hashes to the//a master key, while keeping other master key bits completely untouched.
