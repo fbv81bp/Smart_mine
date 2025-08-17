@@ -1,4 +1,4 @@
-## Cracking a master key of just one single mine
+## Cracking the master key of just one single mine
 
 The problem generally:
 - having a system with a compromised state, that cannot be altered but is known to an adversary, and
