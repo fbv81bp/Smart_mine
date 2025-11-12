@@ -15,3 +15,7 @@ From a security perspective, it doesn't seem foolish to use shorter counters, pr
 Obviously, in this case the counters must also expire in different phases so that some protection always remains in the area. The counter shouldn't expire too quickly either, lest radio jamming during an attack prevent reactivation of the minefield...!
 
 A directional antenna that specifically receives from vertical directions would make it harder to jam the deactivation transmitter from the side. However, for recoding, the signal comes from the side, so two types of antennas are needed - though the latter can also be directional after training. Alternatively, one must fly a drone overhead for recoding (silly, but solvable, and from the side it might not be able to receive from the ground anyway).
+
+## Addressing corruption of state by RSA
+
+Using two safe primes' multiple in RSA as modulus, the receiver's exponent may be any arbitrary odd number that is significantly smaller than the primes themselves. Like a hash of time, or the next odd number if that was even. This can create the time based key hopping mechanism that is still unidirectional, but is based on an asymmetric cipher.
