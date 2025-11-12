@@ -13,3 +13,7 @@ Biztonsági szempontból nem tűnik hülyeségnek rövidebb számlálót haszná
 Nyilván ebben az esetben a számlálók is eltérő fázisokban kell, hogy járjanak le, hogy valamennyi védettség mindig maradjon a területen. Túl rövid idő alatt sem jáhat le a számláló, nehogy egy támadás közbeni rádió zavarás miatt ne lehessen újra aktiválni az aknamezőt...(!)
 
 Irányérzékeny antenna, ami kifejezetten függőleges irányból vesz, oldalról nehezebb legyen bezavarni a kikapcsolási adót. Viszont átkódoláshoz pont, hogy oldalról jön a jel, így kétféle antenna kell, de utóbbi is lehet irányérzékeny feltanítás után. Avagy drónnal fölé kell repülni az újrakódoláshoz (hülyeség, de megoldható, és oldalról a földből nem is biztos, hogy képes máshogy venni).
+
+## Ami az állapot kitudódásá illeti
+
+Ha az állapot kitudódik, akkor ebben a konstrukcióban a támadó az egész aknamezőt kompromittálhatja. Ezt úgy fest, csak aszimmetrikus titkosítással lehet megoldani. Ha lemondunk a kvantum-biztosságról, akkor kézenfekvő az RSA, ami használható vételi üzemmódban ugrókóddal is: ha a modulusa 2 biztonságos prímből áll (amik más - nagy - prímek dupláinál egyel nagyobbak), és a vételi, kititkosítási kitevő egy páratlan szám, ami akár egy számláló, időzítő hash-éhez a legközelebbi. Ekkor a központi adó a két prím faktor ismeretében mindig előre meghatározhatja, milyen betitkosítási kitevővel kell az üzenetet elküldeni az aknák mesterkulcsának megváltoztatásához.
