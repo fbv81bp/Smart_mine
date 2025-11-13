@@ -15,3 +15,5 @@ The problem generally:
 4) Some heartbeat like, secured radio message is broadcast to the mines, of a mine looses that, it deletes its master key(?). Can be replayed though. Similar to having a GPS receiver to ban removal.
 5) Compare only parts of hashes in a randomly addressed order by PUFs, and make a majority decision on securely large number of bits if the preimage hashes to the//a master key, while keeping other master key bits completely untouched.
 6) Forget about quantum security and utilize RSA decryption in the mines to restore the integrity of a corrupted state... (and//or a hopefully quantum safe one, like Kyber)
+
+Calude by Anthropic claims that as long as the encrypting exponent is held secret, the decrypting exponents and the ciphered messages can not be used to break N by calculating Phi with known lattice methods.
