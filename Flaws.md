@@ -7,6 +7,9 @@ The problem generally:
 
 1) If the master key ever gets compromised, it is easy to decrypt the new key when the central broadcast is sent to re-key the mine field with a pre-image of the contemporary master key.
 2) Replacing master keys faster than they may be cracked doesn't work here either, for the enemy may record the radio transmissions of the new keys, and decipher them once they find the very first master key in an older mine.
+3) Flaws with RSA:
+   - ChatGPT: if d is known, N is readable, all communication is accessable, the master key will be known to the enemy
+   - Claude: replay attacks need to be prevented.
 
 #### Patches
 1) A possible patch may be to use multiple master keys, and only refresh one at a time, while taking the hash of all these master keys for the generation of the hopping keys. This way sets of mines can be deployed, whose master key sets overlap only partially. Then if a few are stolen and their master key may be successfully read by tampering and side channels, the full mine field still won't be compromised. It is like having a Karnaugh table of mine sets: 4 indepent variables would create 2 ^ 4=16 different sets, each variable has two values 0 and 1, so we need 2 * 4=8 master keys to create 16 independent keying sets. For example with 16 variables, 2^16=65536 sets of mines can be created, with only 2 * 16=32 master keys.
@@ -17,3 +20,5 @@ The problem generally:
 6) Forget about quantum security and utilize RSA decryption in the mines to restore the integrity of a corrupted state... (and//or a hopefully quantum safe one, like Kyber)
 
 Calude by Anthropic claims that as long as the encrypting exponent is held secret, the decrypting exponents and the ciphered messages can not be used to break N by calculating Phi with known lattice methods.
+
+ChatGPT: d must be unknown
